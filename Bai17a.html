@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: rgb(245, 191, 91);
+        }
+
+        input {
+            margin: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <p>
+        if you interested in purchasing one or more of out products,
+        before ordering please complete some or all of the following
+        survey for out marketing department. Answering any question is
+        optional, and all information will be kept strictly confidential.
+        Thanks you very much for your time!
+    </p>
+    <form>
+        <label for="fullName">1. What is your name?</label><br>
+        <input type="text" name="name" id="fullName"><br>
+        <label>2. What is your date of birth?</label><br>   
+        <label for ="month">Month:</label> <input type="month" name="month" id="month">
+        <label for ="date">Date:</label> <input type="number" name="date" id ="date" min="1" max="31">
+        <br>
+        <label for="email">3. What is your mailing address(if you would
+            like to have a hard copy of out catalog sent to you)?
+        </label><br>
+        <textarea cols="50" rows="4"></textarea><br>
+        <label for="address">4.What is your email address</label><br>
+        <input type="text" id="address" name="address"><br>
+        <label>5. Have you viewed our online product catalog?</label><br>
+        <input type="radio" name = "viewed"  value="Yes" checked>Yes
+        <input type = "radio" name = "viewed" value="No"> No<br>
+        <label for = "product">6. if so, what product(s), besides the one you are ordering,
+            might you be interested in purchasing in the future? (Check all that apply.)
+        </label><br>
+        <input type="checkbox" name = "product[]" id="product" value="VCR">VCR<br>
+        <input type="checkbox" name = "product[]" id="product" value="Big Screen TV">Big Screen TV<br>
+        <input type="checkbox" name = "product[]" id="product" value="Audio Equipment">Audio Equipment<br>
+        <input type="checkbox" name = "product[]" id="product" value="Video Equipment">Video Equipment<br>
+        <input type="checkbox" name = "product[]" id="product" value="Camera Equipment">Camera Equipment<br>
+        <input type="checkbox" name = "product[]" id="product" value="Other" checked>Other
+        <input type=text value="Please List:" name="other"><br>
+        <label for="question">7. Do you have any question, comments or suggestions before proceeding to the order Form?</label><br>
+        <textarea cols="50" rows="5" id="question" name="question" >Your inputs: </textarea>
+    </form>
+</body>
+</html>

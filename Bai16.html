@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Travel reservation form</h1>
+    <h2>* denotes mandotory</h2>
+    <form>
+        <label for="fullName">Full name*:<br></label>
+        <input type="text" id="fullName" name="FullName" placeholder="FirstName LastName"><br>
+        <label for="email">Email address*:<br></label>
+        <input type="address" id="email" name="Email" placeholder="EMAIL_ADDRESS"><br>
+        <label for="tour">Select Tour Package*:<br></label>
+        <select name="tour" id="tour">
+            <option value="Goa">Goa</option>
+        </select><br>
+        <label for="date">Arrival date*:<br></label>
+        <input type="date" id="date" name="Date" placeholder="m/d/y"><br>
+        <label for="tel">Number of persons*:<br></label>
+        <input type="tel" id="tel" name="telephone" placeholder="UNKNOW_TYPE"><br>
+        <label for="avail">What you want to avail?*</label><br>
+        Boarding<input type="checkbox" id="avail" name="avail"><br>
+        Fooding<input type="checkbox" id="avail" name="avail"><br>
+        Sight seeing<input type="checkbox" id="avail" name="avail"><br>
+        <label for="code">Discout Coupon code:</label><br>
+        <input type="text" id="code" name="code" placeholder="UNKNOW_TYPE"><br>
+        <label for="conditon">Terms and conditions*</label><br>
+        <input type="radio" name="conditon" id="conditon">I agree
+        <input type="radio" name="conditon" id="conditon">I disagree<br>
+        <input type="submit" value="Complete reservation">
+    </form>
+</body>
+</html>

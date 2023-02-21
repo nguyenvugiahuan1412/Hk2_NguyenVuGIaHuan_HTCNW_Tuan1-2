@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ConTact Us</h1>
+    <fieldset>
+        <legend>Your message:</legend>
+        <table>
+            <tr>
+                <td><label for="emailTo">To</label></td>
+                <td><input type="text" name="To" value="Example Cafe" readonly id="emailTo"></td>
+            </tr>
+            <tr>
+                <td><label for="emailForm">Your email</label></td>
+                <td><input type="email" name="email" id="emailForm"></td>
+            </tr>
+            <tr>
+                <td><label for="emailBody">Message</label></td>
+                <td><textarea cols="50" rows="10" id="emailBody"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>How you found us:</legend>
+        <table>
+            <tr>
+                <td><label for="hear">How did you hear<br> of us</label></td>
+                <td>
+                    <select name="intemediate" id="hear">
+                        <option value="Google">Google</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="letter">Newsletter</label></td>
+                <td><input type="checkbox" checked id="letter">Ensure this box
+                    is checked if you would like to receive email updates
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <td><input type="submit" value="send message"></td>
+    <fieldset>
+        <legend>Contact Infomation</legend>
+        <table>
+            <tr>
+                <td><label for="firstName">First Name:</label></td>
+                <td><input type="text" id="firstName"></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last Name:</label></td>
+                <td><input type="text" id="lastName"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Competition Question</legend>
+        <label for="firstQuestion">How tall is the Eiffel Tower in Paris, France?<br></label>
+        <input type="radio" id="firstQuestion">584fit<br>
+        <input type="radio" id="firstQuestion">784fit<br>
+        <input type="radio" id="firstQuestion">984fit<br>
+        <input type="radio" id="firstQuestion">1184fit<br>
+    </fieldset>
+    <fieldset>
+        <legend>Tiebreaker Question</legend>
+        <label for="opinion">In 25 words or less, say why you would like to win $10,000:<br></label>
+        <textarea id="opinion" cols="50" rows="10"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Enter competition</legend>
+        <input type="submit" value="Enter Competition">
+    </fieldset>
+</body>
+</html>
